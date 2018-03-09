@@ -130,5 +130,5 @@ Project members and contributors :)
    [cheatsheet]: <https://danielkummer.github.io/git-flow-cheatsheet/>
    [message]: <https://chris.beams.io/posts/git-commit/>
    [Google Java Style]: <https://google.github.io/styleguide/javaguide.html>
-   [code style]: <https://github.com/islands-wars/guidelines/blob/master/is_scheme.xml>
-   [header]: <https://github.com/islands-wars/guidelines/blob/master/HEADER>
+   [code style]: <https://github.com/islands-wars/guidelines/blob/master/java/is_scheme.xml>
+   [header]: <https://github.com/islands-wars/guidelines/blob/master/java/HEADER>
