@@ -1,0 +1,13 @@
+# Specify language
+language: java
+jdk:
+  - oraclejdk8
+
+# Script to execute before (download dependencies or unit test for example)
+before_install:
+  - echo "Loading project unit tests..."
+  - ./gradlew test
+
+# Gradlew clean and build a fatJar
+install:
+  - ./gradlew core:clean core:fatjar
