@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/islands-wars/guidelines/master/assets/icon.svg" width="64"> Islands Wars 
+# <img src="https://raw.githubusercontent.com/islands-wars/guidelines/master/assets/icon.png" width="64"> Islands Wars 
 
 
 > Islands Wars is a Minecraft sky block server.
@@ -22,7 +22,7 @@ What things you need to install the software and how to install them
 
 git clone [url] [options]
 ```shell
-$ git clone git@github.com:islands-wars/REPOSITORY_NAME.git DirFoldername
+$> git clone git@github.com:islands-wars/REPOSITORY_NAME.git DirFoldername
 ```
 You can now import this project with your favorite IDE.
 
@@ -30,11 +30,11 @@ You can now import this project with your favorite IDE.
 
 We use git flow as branching-model, simply init a new feature :
 ```shell
-git flow feature start featureName
-git add file
-git commit -m "Clear commit message"
+$> git flow feature start featureName
+$> git add file
+$> git commit -m "Clear commit message"
 
-git flow feature publish featureName
+$> git flow feature publish featureName
 ```
 And then open a new pull request. In the case that you see an error on production (master branch), you can supply a PR using hotfix instead of feature.
 Please refer to this [cheatsheet] if you are new to git flow and wants to learn the basics.
@@ -46,7 +46,10 @@ Please refer to this [cheatsheet] if you are new to git flow and wants to learn 
 Whatever the repository is, ```master``` branch is always protected, only an admin can accept and merge request.
 Please work on a dedicated git flow branch.
 
-How to contribute and project guidelines.
+### Write good pull request
+
+Follow the opening issues, or else create a dedicated one. Always works from develop (git flow feature init ..) and proposed your change to develop branch.
+Don't forget to add unit test if needed, to comment your code or adapt documentation. Be concise in your commit message.
 
 # Java
 ---
@@ -54,8 +57,8 @@ How to contribute and project guidelines.
 
 Compile your modifications using gradle :
 ```shell
-./gradlew <task> (on Unix-like platforms such as Linux and Mac OS X)
-gradlew <task> (on Windows using the gradlew.bat batch file)
+$> ./gradlew task (on Unix-like platforms such as Linux and Mac OS X)
+$> gradlew task (on Windows using the gradlew.bat batch file)
 ```
 We use git flow as branching-model, simply init a new feature and then open a pull request linking to your feature brench
 
