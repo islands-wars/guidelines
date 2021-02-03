@@ -4,8 +4,8 @@ apply from: 'islandswars.gradle'
 group = 'fr.islandswars'
 version = '0.0.1'
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+sourceCompatibility = 1.15
+targetCompatibility = 1.15
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
 sourceSets {
@@ -26,7 +26,7 @@ buildscript {
         jcenter()
     }
     dependencies {
-        classpath(group: 'org.jfrog.buildinfo', name: 'build-info-extractor-gradle', version: '4.+')
+        classpath "org.jfrog.buildinfo:build-info-extractor-gradle:latest.release"
     }
 }
 
@@ -36,5 +36,6 @@ repositories {
 }
 
 dependencies {
-    testCompile "junit:junit:4.4"
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 }

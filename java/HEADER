@@ -2,7 +2,7 @@
  * File <b>${NAME}</b> located on ${PACKAGE_NAME}
  * ${NAME} is a part of ${PROJECT_NAME}.
  * <p>
- * Copyright (c) 2017 - 2018 Islands Wars.
+ * Copyright (c) 2017 - ${YEAR} Islands Wars.
  * <p>
  * ${PROJECT_NAME} is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

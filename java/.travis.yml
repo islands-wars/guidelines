@@ -1,7 +1,7 @@
 # Specify language
 language: java
 jdk:
-  - oraclejdk8
+  - oraclejdk15
 
 # Script to execute before (download dependencies or unit test for example)
 before_install:

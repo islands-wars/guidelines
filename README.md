@@ -14,17 +14,7 @@ These instructions will get you a copy of the project up. See deployment for not
 ### Prerequisites
 
 What things you need to install the software and how to install them
-* [GIT] is a version control system.
-* [JDK] is the Java Development Kit, Islands Wars need version 8 or higher.
-* [RUST] the latest stable version of rust binaries.
-
-### Git Clone
-
-git clone [url] [options]
-```shell
-$> git clone git@github.com:islands-wars/REPOSITORY_NAME.git DirFoldername
-```
-You can now import this project with your favorite IDE.
+* [JDK] is the Java Development Kit, Islands Wars need version 15 or higher.
 
 ### Git flow
 
@@ -36,20 +26,16 @@ $> git commit -m "Clear commit message"
 
 $> git flow feature publish featureName
 ```
-And then open a new pull request. In the case that you see an error on production (master branch), you can supply a PR using hotfix instead of feature.
+And then open a new pull request. In the case that you see an error on production (master branch), you can supply a PR using hotfix instead of a feature.
 Please refer to this [cheatsheet] if you are new to git flow and wants to learn the basics.
 
 # Contributing
 ---
-### Protected branch
-
-Whatever the repository is, ```master``` branch is always protected, only an admin can accept and merge request.
-Please work on a dedicated git flow branch.
 
 ### Write good pull request
 
 Follow the opening issues, or else create a dedicated one. Always works from develop (git flow feature init ..) and proposed your change to develop branch.
-Don't forget to add unit test if needed, to comment your code or adapt documentation. Be concise in your commit message.
+Don't forget to add a unit test if needed, to comment your code or adapt documentation. Be concise in your commit message.
 
 # Java
 ---
@@ -57,11 +43,8 @@ Don't forget to add unit test if needed, to comment your code or adapt documenta
 
 Compile your modifications using gradle :
 ```shell
-$> ./gradlew task (on Unix-like platforms such as Linux and Mac OS X)
-$> gradlew task (on Windows using the gradlew.bat batch file)
+$> ./gradlew or gradlew task
 ```
-We use git flow as branching-model, simply init a new feature and then open a pull request linking to your feature brench
-
 
 ### Coding guidelines
 
@@ -112,8 +95,8 @@ Project members and contributors :)
 
 * **[Vinetos :](https://twitter.com/vinetos)**
   * Initial works, lead dev
-* **[Xharos :](https://twitter.com/devxharos)**
-  * Initial works
+* **Xharos :**
+  * Initial works, lead dev
 * **[LightDiscord :](https://twitter.com/LightDiscord)**
   * Initial works on web site
 * **[NormanFeltz :](https://twitter.com/normanfeltz)**
@@ -123,10 +106,8 @@ Project members and contributors :)
 * **[Creart :](https://twitter.com/Creaaart)**
   * Spellchecking
 
-
-   [GIT]: <https://git-scm.com/book/en/v1/Getting-Started-Installing-Git>
+    
    [JDK]: <http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html>
-   [RUST]: <https://www.rust-lang.org/en-US/install.html>
    [cheatsheet]: <https://danielkummer.github.io/git-flow-cheatsheet/>
    [message]: <https://chris.beams.io/posts/git-commit/>
    [Google Java Style]: <https://google.github.io/styleguide/javaguide.html>
