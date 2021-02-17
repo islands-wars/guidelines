@@ -1,5 +1,4 @@
 apply plugin: "java"
-apply from: 'islandswars.gradle'
 
 group = 'fr.islandswars'
 version = '0.0.1'
@@ -21,6 +20,16 @@ sourceSets {
     }
 }
 
+jar {
+    archivesBaseName = rootProject.name+".jar"
+    manifest {
+        attributes 'Implementation-Title': archivesBaseName, 'Implementation-Version': project.version.toString(), 'Main-Class': "fr.islandswars.test.MainClass"
+    }
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
+
 buildscript {
     repositories {
         jcenter()
@@ -33,9 +42,17 @@ buildscript {
 
 repositories {
     mavenCentral()
+    mavenLocal() //needed for spigot
+    maven { //custom islandswars repository
+        url 'http://jfrog.islandswars.fr:8082/artifactory/islandswars'
+    }
 }
 
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+}
+
+test {
+    useJUnitPlatform()
 }
