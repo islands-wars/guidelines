@@ -1,10 +1,8 @@
 <code_scheme name="Default" version="173">
+  <option name="RIGHT_MARGIN" value="200" />
   <codeStyleSettings language="JAVA">
     <option name="ALIGN_MULTILINE_ASSIGNMENT" value="true" />
     <option name="ALIGN_GROUP_FIELD_DECLARATIONS" value="true" />
     <option name="ALIGN_CONSECUTIVE_VARIABLE_DECLARATIONS" value="true" />
-    <indentOptions>
-      <option name="USE_TAB_CHARACTER" value="true" />
-    </indentOptions>
   </codeStyleSettings>
 </code_scheme>
